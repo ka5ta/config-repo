@@ -1,0 +1,9 @@
+
+## Gateway cfg ##
+  cloud:
+    gateway:
+      mvc:
+        routes[0]:
+          id: product-route
+          uri: http://localhost:8080
+          predicates[0]: Path=/catalog/**
