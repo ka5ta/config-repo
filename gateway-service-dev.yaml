@@ -1,5 +1,6 @@
 
 ## Gateway cfg ##
+spring:
   cloud:
     gateway:
       mvc:
