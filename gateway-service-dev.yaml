@@ -37,5 +37,5 @@ resilience4j.circuitbreaker:
       automaticTransitionFromOpenToHalfOpenEnabled: true
       eventConsumerBufferSize: 5 # stores 5 last events in /actuator/circuitbreakerevents
       recordExceptions:
-        - feign.RetryableException
+        - feign.FeignException
         - com.example.productservice.exception.IdNotValidException
