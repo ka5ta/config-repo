@@ -1,0 +1,6 @@
+
+## Additional yaml cfgs
+spring:
+  cloud:
+    config:
+      name: circuitbreaker
