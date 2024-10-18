@@ -9,10 +9,6 @@ management:
   health.circuitbreakers.enabled: true
 
 resilience4j.circuitbreaker:
-  instances:
-    productServiceCb:
-      baseConfig: default
-
   configs:
     default:
       registerHealthIndicator: true
@@ -25,6 +21,3 @@ resilience4j.circuitbreaker:
       eventConsumerBufferSize: 5 # stores 5 last events in /actuator/circuitbreakerevents
       recordExceptions:
         - java.nio.channels.ClosedChannelException
-        - feign.FeignException
-        - com.example.productservice.exception.IdNotValidException
-
